@@ -1,0 +1,233 @@
+
+body,html{
+
+    /*background-color: red;*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+
+    height: 98%;
+    width: 100%;
+    margin:  0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: #a6acb5;
+    height: 100%;
+    width: 30%;
+    float: left;
+
+
+}
+#content-body{
+
+    width: 70%;
+    background-color: #a6acb5;
+    float: left;
+    height: 100%;
+    margin:  0;
+}
+
+#navbar-header{
+
+    width: 100%;
+    background-color:#0c748e;
+    height: 10%;
+    margin:  0;
+}
+
+.content{
+
+    width: 100%;
+    background-color: #a6acb5;
+    height: 90%;
+    margin:  0;
+}
+
+
+.content-header{
+
+    width: 100%;
+    background-color: #e8ebef;
+    height: 12%;
+}
+
+.search-friend-box{
+
+    width: 50%;
+    /*background-color: white;*/
+    height: 100%;
+    /*display: inline-block;*/
+
+
+
+}
+
+
+.search-friend-box input[type="text"] {
+
+    width: 85%;
+    margin-top: 10px;
+    border: none;
+    padding: 5px;
+
+
+}
+
+.search-friend-box button {
+
+    position: absolute;
+    margin-top: 10px;
+    border: none;
+    background-color: #603dd3;
+    color:  white;
+    padding: 5px;
+
+
+}
+
+
+.message-chats-display{
+
+    width: 100%;
+    background-color: #eff4f4;
+    height: 75%;
+}
+
+.textField-box{
+    width: 100%;
+    background-color: #E8EBEF;
+    height: 13%;
+}
+
+.user-body{
+
+    width: 100%;
+    height: 100%;
+    background-color: #2e6da4;
+}
+
+
+.search-body{
+    width: 100%;
+    height: 10%;
+    background-color:#0c748e;
+    margin:  0;
+
+
+}
+
+.users-list{
+
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.content-s{
+    height: auto;
+    background-color: white;
+}
+
+
+.search-result{
+
+    width: 60%;
+    height: auto;
+    float: left;
+
+}
+
+.right-bar{
+
+    width: 40%;
+    float: left;
+}
+.search-header {
+
+    height: 30px;
+    width: 100%;
+    background: white;
+    color: black;
+}
+
+.search-content{
+
+    height: 80px;
+    width: 100%;
+    background: white;
+
+
+}
+
+.s-rofile-picture{
+
+    width: 20%;
+    height: 80px;
+    /*background-color: #1c7430;*/
+    float: left;
+}
+
+.s-rofile-picture img{
+
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 5%;
+
+    /*background-color: #1c7430;*/
+
+}
+
+
+.s-right-content {
+
+
+    width: 80%;
+    height: 80px;
+    /*background-color: #6E6E6E;*/
+    float: left;
+}
+
+.user-search-infos {
+
+     width: 70%;
+    height: 80px;
+     background-color: white;
+     float: left;
+ }
+
+.user-search-actions {
+
+    width: 30%;
+    height: 80px;
+    /*background-color: brown;*/
+    float: left;
+}
+
+.user-search-actions button{
+
+
+    width: 100%;
+
+}
+
+hr {
+
+    margin: 1px 0 1px 0;
+}

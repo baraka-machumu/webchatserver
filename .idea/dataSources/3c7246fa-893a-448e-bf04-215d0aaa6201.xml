@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="chatapplication@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="chatapplication">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="ajax"/>
+    <schema id="4" parent="1" name="android_chat"/>
+    <schema id="5" parent="1" name="app"/>
+    <schema id="6" parent="1" name="bagamoyo"/>
+    <schema id="7" parent="1" name="bignote"/>
+    <schema id="8" parent="1" name="c3ssra_complaint"/>
+    <schema id="9" parent="1" name="chat"/>
+    <schema id="10" parent="1" name="chatapp"/>
+    <schema id="11" parent="1" name="chatsys"/>
+    <schema id="12" parent="1" name="comp2"/>
+    <schema id="13" parent="1" name="complaints"/>
+    <schema id="14" parent="1" name="complaints_old"/>
+    <schema id="15" parent="1" name="compliance"/>
+    <schema id="16" parent="1" name="customer"/>
+    <schema id="17" parent="1" name="datcollectiondb"/>
+    <schema id="18" parent="1" name="datingdb"/>
+    <schema id="19" parent="1" name="drinks"/>
+    <schema id="20" parent="1" name="esubportal"/>
+    <schema id="21" parent="1" name="gcm_chat"/>
+    <schema id="22" parent="1" name="hawa"/>
+    <schema id="23" parent="1" name="hrsys"/>
+    <schema id="24" parent="1" name="hy"/>
+    <schema id="25" parent="1" name="ims"/>
+    <schema id="26" parent="1" name="information_schema"/>
+    <schema id="27" parent="1" name="kcmc"/>
+    <schema id="28" parent="1" name="lbms"/>
+    <schema id="29" parent="1" name="library"/>
+    <schema id="30" parent="1" name="lubasu"/>
+    <schema id="31" parent="1" name="masdb"/>
+    <schema id="32" parent="1" name="mchumba_app"/>
+    <schema id="33" parent="1" name="membership_db"/>
+    <schema id="34" parent="1" name="movies"/>
+    <schema id="35" parent="1" name="movies_mcity"/>
+    <schema id="36" parent="1" name="mysql"/>
+    <schema id="37" parent="1" name="performance_schema"/>
+    <schema id="38" parent="1" name="phpmyadmin"/>
+    <schema id="39" parent="1" name="portal"/>
+    <schema id="40" parent="1" name="primary_school_management_system"/>
+    <schema id="41" parent="1" name="reg"/>
+    <schema id="42" parent="1" name="saccosdb"/>
+    <schema id="43" parent="1" name="spring"/>
+    <schema id="44" parent="1" name="ssiaptest"/>
+    <schema id="45" parent="1" name="ssip"/>
+    <schema id="46" parent="1" name="ssra"/>
+    <schema id="47" parent="1" name="ssra-wp"/>
+    <schema id="48" parent="1" name="ssraweb"/>
+    <schema id="49" parent="1" name="ssra_dp"/>
+    <schema id="50" parent="1" name="student"/>
+    <schema id="51" parent="1" name="tcmssra"/>
+    <schema id="52" parent="1" name="tcmssranew"/>
+    <schema id="53" parent="1" name="test"/>
+    <schema id="54" parent="1" name="testing"/>
+    <schema id="55" parent="1" name="tourguide"/>
+    <schema id="56" parent="1" name="training"/>
+    <schema id="57" parent="1" name="weather_parameters"/>
+    <schema id="58" parent="1" name="whatsapweb"/>
+    <schema id="59" parent="1" name="wsdms"/>
+    <table id="60" parent="2" name="chats"/>
+    <table id="61" parent="2" name="friends"/>
+    <table id="62" parent="2" name="migrations"/>
+    <table id="63" parent="2" name="password_resets"/>
+    <table id="64" parent="2" name="reply_messages"/>
+    <table id="65" parent="2" name="users"/>
+    <column id="66" parent="60" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="67" parent="60" name="to_user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="68" parent="60" name="from_user_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="69" parent="60" name="message">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="60" name="created_at">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="71" parent="60" name="updated_at">
+      <Position>6</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <key id="72" parent="60" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id
+message</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="73" parent="61" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="74" parent="61" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="75" parent="61" name="friend_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="76" parent="61" name="status">
+      <Position>4</Position>
+      <Comment>0 for pending, 1 for rejected, 2 accepted and friend</Comment>
+      <DataType>enum(&apos;0&apos;, &apos;1&apos;, &apos;2&apos;)|0</DataType>
+    </column>
+    <column id="77" parent="61" name="created_at">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="78" parent="61" name="updated_at">
+      <Position>6</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <key id="79" parent="61" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="80" parent="62" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="81" parent="62" name="migration">
+      <Position>2</Position>
+      <DataType>varchar(191)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="62" name="batch">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="83" parent="62" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="84" parent="63" name="email">
+      <Position>1</Position>
+      <DataType>varchar(191)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="63" name="token">
+      <Position>2</Position>
+      <DataType>varchar(191)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="63" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <index id="87" parent="63" name="password_resets_email_index">
+      <ColNames>email</ColNames>
+    </index>
+    <column id="88" parent="64" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="89" parent="64" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="90" parent="64" name="thread_text">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="91" parent="64" name="created_at">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="92" parent="64" name="updated_at">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <key id="93" parent="64" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="94" parent="65" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="95" parent="65" name="name">
+      <Position>2</Position>
+      <DataType>varchar(191)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="65" name="email">
+      <Position>3</Position>
+      <DataType>varchar(191)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="65" name="email_verified_at">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="98" parent="65" name="image_path">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="99" parent="65" name="password">
+      <Position>6</Position>
+      <DataType>varchar(191)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="100" parent="65" name="login_status">
+      <Position>7</Position>
+      <DataType>int(2)|0</DataType>
+    </column>
+    <column id="101" parent="65" name="last_login">
+      <Position>8</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="102" parent="65" name="remember_token">
+      <Position>9</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="103" parent="65" name="created_at">
+      <Position>10</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="104" parent="65" name="updated_at">
+      <Position>11</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <index id="105" parent="65" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="106" parent="65" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="107" parent="65" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
